@@ -1,0 +1,15 @@
+<diagram>
+  <block title="Frontend (index.html)">
+    <desc>Displays analytics, fetches from backend, shows alert, allows CSV download</desc>
+  </block>
+  <block title="Backend (Flask app.py)">
+    <desc>Receives tick data, computes analytics, serves API and CSV</desc>
+  </block>
+  <arrow from="Frontend (index.html)" to="Backend (Flask app.py)">
+    <desc>GET /analytics, /analytics.csv</desc>
+  </arrow>
+  <arrow from="External (Binance HTML tool)" to="Backend (Flask app.py)">
+    <desc>POST /tick</desc>
+  </arrow>
+</diagram>
+<!-- This is a placeholder. You can import this into draw.io and export as PNG/SVG if required. -->
